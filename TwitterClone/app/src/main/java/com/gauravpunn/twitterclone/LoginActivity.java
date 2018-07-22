@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -26,6 +27,8 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn = (Button)findViewById(R.id.LoginButton);
         emailET2 = (TextInputEditText)findViewById(R.id.EmailEditT2);
         passET2 = (TextInputEditText)findViewById(R.id.PasswordEditT2);
+
+        passET2.setTransformationMethod(new PasswordTransformationMethod());
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
