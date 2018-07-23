@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
 
         passET2.setTransformationMethod(new PasswordTransformationMethod());
 
+
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
